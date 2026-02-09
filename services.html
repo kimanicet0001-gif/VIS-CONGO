@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIT DRC | Nos Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/output.css">
+
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+    <header class=" backdrop-blur-[3px]  bg-opacity-100  bg-[#06377be9] sticky top-0 z-50 shadow-md">
+
+        <nav class="container  mx-auto px-4 h-[12vh] flex justify-between items-center">
+
+            <div class="logo flex w-[40%] gap-2">
+                <div class="pt-2">
+                    <img src="../img/cafe.jpg" class=" rounded-4xl w-[9vh] object-cover " alt="">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27vh"
+                    height="9vh">
+                    <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="1rem" x="0px" y="50px">
+                        <tspan font-size="2rem" font-family="Bleeding Cowboys" fill="#FFFFFF">VISIT</tspan>
+                        <tspan font-size="2rem" font-family="Bleeding Cowboys" fill="#F9BB15">&#32;DRC</tspan>
+                    </text>
+                </svg>
+            </div>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link  text-[whitesmoke] hover:text-yellow-500 font-semibold">Accueil</a>
+                <a href="apropos.html" class="nav-link  text-[whitesmoke] hover:text-yellow-500 font-semibold">À
+                    Propos</a>
+
+                <a href="services.html"
+                    class="nav-link  text-[whitesmoke] hover:text-yellow-500 font-semibold">Services</a>
+
+                <a href="login.html" id="Connexion"
+                    class="px-5 py-2 border hover:border-[whitesmoke] text-[#06377be9] rounded-full hover:bg-[#06377b00] bg-[whitesmoke] hover:text-[whitesmoke] transition duration-300 font-semibold">
+                    Connexion
+
+                </a>
+                <a href="/logout"
+                    class="px-5 py-2 bg-red-600 text-[whitesmoke] rounded-full hover:bg-red-700 transition duration-300 font-semibold hidden">
+                    Déconnexion
+                </a>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <h1 class="text-5xl font-extrabold text-center  text-[#06377be9]  mb-6">
+
+            Nos Services Voyage
+        </h1>
+        <p
+            class="  backdrop-blur-[3px] bg-[#06377b9e] bg-opacity-100 text-center text-xl text-[whitesmoke] font-bold mb-12 p-4  rounded-lg max-w-2xl mx-auto">
+            Pour accéder aux détails des prix et au paiement, vous devez vous connecter d'abord !
+        </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+            <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+                <img src="../img/GUIDEE.jpg" alt="Guide de Visite" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-[#06377be9] mb-4">
+                        Service de Guide & Interprète
+                    </h2>
+                    <p class="text-[#06377be9] mb-6">
+                        Des experts locaux multilingues pour vous accompagner dans chaque parc, ville et village.
+                        Sécurité, connaissance culturelle et immersion garanties.
+                    </p>
+                    <a href="login.html"
+                        class="service-link block text-center bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-600 transition duration-300">
+                        Voir les Prix (Connexion requise)
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+                <img src="../img/voiture.jpg" alt="Location de Voiture" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-[#06377be9] mb-4">
+                        Location de Voitures & Chauffeur Privé
+                    </h2>
+                    <p class="text-[#06377be9] mb-6">
+                        Véhicules tout-terrain sécurisés avec ou sans chauffeurs professionnels pour naviguer sur toutes
+                        les routes de la RDC en toute confiance.
+                    </p>
+                    <a href="login.html"
+                        class="service-link block text-center bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-600 transition duration-300">
+                        Voir les Prix (Connexion requise)
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+                <img src="../img/hotel-selton.jpg" alt="Hôtellerie" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-[#06377be9] mb-4">
+                        Réservation Hôtellerie
+                    </h2>
+                    <p class="text-[#06377be9] mb-6">
+                        Des hôtels de luxe aux éco-lodges au cœur de la brousse, nous vous trouvons le meilleur
+                        hébergement adapté à votre budget et à vos envies.
+                    </p>
+                    <a href="login.html"
+                        class="service-link block text-center bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-600 transition duration-300">
+                        Voir les Prix (Connexion requise)
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 VISIT DRC. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
