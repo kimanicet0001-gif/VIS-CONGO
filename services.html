@@ -6,125 +6,252 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VISIT DRC | Nos Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../src/output.css">
-
+    <style>
+        .service-card { transition: all 0.3s ease; }
+        .service-card:hover { transform: translateY(-8px); }
+    </style>
 </head>
 
-<body class="bg-gray-50 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans">
 
-    <header class=" backdrop-blur-[3px]  bg-opacity-100  bg-[#06377be9] sticky top-0 z-50 shadow-md">
-
-        <nav class="container  mx-auto px-4 h-[12vh] flex justify-between items-center">
-
-            <div class="logo flex w-[40%] gap-2">
-                <div class="pt-2">
-                    <img src="../img/cafe.jpg" class=" rounded-4xl w-[9vh] object-cover " alt="">
+    <header class="backdrop-blur-md bg-[#06377be9]/90 sticky top-0 z-50 shadow-lg border-b border-white/10">
+        <nav class="container mx-auto px-6 h-[12vh] flex justify-between items-center">
+            <div class="logo flex items-center gap-3">
+                <img src="img/cafe.jpg" class="rounded-full w-14 h-14 object-cover border-2 border-yellow-500 shadow-inner" alt="Logo">
+                <div class="flex flex-col">
+                    <span class="text-2xl font-black text-white leading-none">VISIT <span class="text-yellow-500">DRC</span></span>
+                    <span class="text-[10px] text-yellow-200 tracking-[0.3em] uppercase">Expérience Unique</span>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27vh"
-                    height="9vh">
-                    <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="1rem" x="0px" y="50px">
-                        <tspan font-size="2rem" font-family="Bleeding Cowboys" fill="#FFFFFF">VISIT</tspan>
-                        <tspan font-size="2rem" font-family="Bleeding Cowboys" fill="#F9BB15">&#32;DRC</tspan>
-                    </text>
-                </svg>
             </div>
 
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="index.html" class="nav-link  text-[whitesmoke] hover:text-yellow-500 font-semibold">Accueil</a>
-                <a href="apropos.html" class="nav-link  text-[whitesmoke] hover:text-yellow-500 font-semibold">À
-                    Propos</a>
-
-                <a href="services.html"
-                    class="nav-link  text-[whitesmoke] hover:text-yellow-500 font-semibold">Services</a>
-
-                <a href="login.html" id="Connexion"
-                    class="px-5 py-2 border hover:border-[whitesmoke] text-[#06377be9] rounded-full hover:bg-[#06377b00] bg-[whitesmoke] hover:text-[whitesmoke] transition duration-300 font-semibold">
+            <div class="hidden md:flex space-x-10 items-center">
+                <a href="index.html" class="nav-link-hover text-white/90 hover:text-yellow-500 font-semibold transition">Accueil</a>
+                <a href="apropos.html" class="nav-link-hover text-white/90 hover:text-yellow-500 font-semibold transition">À Propos</a>
+                <a href="services.html" class="text-yellow-500 font-bold border-b-2 border-yellow-500">Services</a>
+                <a href="login.html" class="px-7 py-2.5 bg-yellow-500 text-[#06377b] rounded-full font-extrabold hover:bg-white transition-all transform hover:scale-105 shadow-md">
                     Connexion
-
-                </a>
-                <a href="/logout"
-                    class="px-5 py-2 bg-red-600 text-[whitesmoke] rounded-full hover:bg-red-700 transition duration-300 font-semibold hidden">
-                    Déconnexion
                 </a>
             </div>
-
-
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-16">
-        <h1 class="text-5xl font-extrabold text-center  text-[#06377be9]  mb-6">
+    <main>
+        <section class="bg-gradient-to-br from-[#06377b] via-[#052b61] to-[#04214a] text-white py-16 md:py-24 relative overflow-hidden">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center relative z-10">
+                <div>
+                    <p class="text-yellow-400 uppercase tracking-[0.2em] font-semibold mb-3">Nos Services Premium</p>
+                    <h1 class="text-4xl md:text-5xl font-black leading-tight mb-5">Planifiez votre voyage en RDC de A à Z</h1>
+                    <p class="text-slate-200 text-lg mb-8 leading-relaxed">Guides certifiés, transport sécurisé, hébergements vérifiés et accompagnement local pour un séjour sans stress.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="login.html" data-protected="tarifs"
+                            class="bg-yellow-500 text-slate-900 px-8 py-3 rounded-full font-black hover:bg-yellow-400 hover:scale-105 transition shadow-xl">Voir les tarifs</a>
+                        <a href="#services-list"
+                            class="border-2 border-white/50 px-8 py-3 rounded-full font-bold hover:bg-white hover:text-[#06377b] transition shadow-lg">Explorer les services</a>
+                    </div>
+                </div>
 
-            Nos Services Voyage
-        </h1>
-        <p
-            class="  backdrop-blur-[3px] bg-[#06377b9e] bg-opacity-100 text-center text-xl text-[whitesmoke] font-bold mb-12 p-4  rounded-lg max-w-2xl mx-auto">
-            Pour accéder aux détails des prix et au paiement, vous devez vous connecter d'abord !
-        </p>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-
-            <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
-                <img src="../img/GUIDEE.jpg" alt="Guide de Visite" class="w-full h-64 object-cover">
-                <div class="p-8">
-                    <h2 class="text-3xl font-bold text-[#06377be9] mb-4">
-                        Service de Guide & Interprète
-                    </h2>
-                    <p class="text-[#06377be9] mb-6">
-                        Des experts locaux multilingues pour vous accompagner dans chaque parc, ville et village.
-                        Sécurité, connaissance culturelle et immersion garanties.
-                    </p>
-                    <a href="login.html"
-                        class="service-link block text-center bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-600 transition duration-300">
-                        Voir les Prix (Connexion requise)
-                    </a>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-2xl">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><span class="w-8 h-1 bg-yellow-500 rounded"></span> Pourquoi choisir VISIT DRC ?</h2>
+                    <ul class="space-y-4 text-slate-100">
+                        <li class="flex items-start gap-3">✅ <span>Réseau de partenaires fiables dans les principales zones touristiques.</span></li>
+                        <li class="flex items-start gap-3">✅ <span>Assistance locale pour la sécurité et la logistique.</span></li>
+                        <li class="flex items-start gap-3">✅ <span>Process simple : vous vous connectez, vous choisissez, nous organisons.</span></li>
+                    </ul>
+                    <div class="mt-8 pt-4 border-t border-white/10 text-sm text-yellow-300 italic">
+                        Connexion requise pour l’accès aux prix détaillés et au paiement.
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
-                <img src="../img/voiture.jpg" alt="Location de Voiture" class="w-full h-64 object-cover">
-                <div class="p-8">
-                    <h2 class="text-3xl font-bold text-[#06377be9] mb-4">
-                        Location de Voitures & Chauffeur Privé
-                    </h2>
-                    <p class="text-[#06377be9] mb-6">
-                        Véhicules tout-terrain sécurisés avec ou sans chauffeurs professionnels pour naviguer sur toutes
-                        les routes de la RDC en toute confiance.
-                    </p>
-                    <a href="login.html"
-                        class="service-link block text-center bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-600 transition duration-300">
-                        Voir les Prix (Connexion requise)
-                    </a>
+        <section class="container mx-auto px-4 py-12">
+            <div class="flex flex-wrap gap-3 justify-center">
+                <span class="px-6 py-2 rounded-full bg-[#06377b] text-white font-bold text-sm shadow-md cursor-pointer">Tous les services</span>
+                <span class="px-6 py-2 rounded-full bg-white border border-slate-200 text-[#06377b] font-bold text-sm hover:border-[#06377b] transition cursor-pointer shadow-sm">Guides & Interprètes</span>
+                <span class="px-6 py-2 rounded-full bg-white border border-slate-200 text-[#06377b] font-bold text-sm hover:border-[#06377b] transition cursor-pointer shadow-sm">Transport privé</span>
+                <span class="px-6 py-2 rounded-full bg-white border border-slate-200 text-[#06377b] font-bold text-sm hover:border-[#06377b] transition cursor-pointer shadow-sm">Hôtellerie</span>
+            </div>
+        </section>
+
+        <section id="services-list" class="container mx-auto px-4 pb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <article class="service-card bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/GUIDEE.jpg" alt="Service Guide" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                            <span class="text-[#06377b] font-black text-xs uppercase">Dès 90$ / jour</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <h2 class="text-2xl font-black text-[#06377b] mb-4">Guide & Interprète</h2>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">Des experts locaux multilingues pour vos safaris, visites culturelles, randonnées et découvertes urbaines.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 mb-8 list-none font-semibold">
+                            <li>📍 Inclus : accompagnement, interprétation, sécurité.</li>
+                            <li>📍 Idéal : voyageurs solo, groupes, médias.</li>
+                        </ul>
+                        <div class="flex gap-4">
+                            <a href="login.html" data-protected="tarifs" class="flex-1 text-center bg-[#06377b] text-white font-bold py-3 rounded-xl hover:bg-[#04295f] transition shadow-lg">Tarifs</a>
+                            <a href="login.html" data-protected="devis" class="flex-1 text-center bg-yellow-500 text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition shadow-lg">Devis</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="service-card bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/voiture.jpg" alt="Transport" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                            <span class="text-[#06377b] font-black text-xs uppercase">Dès 120$ / jour</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <h2 class="text-2xl font-black text-[#06377b] mb-4">Transport Privé</h2>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">Location de véhicules 4x4, transferts aéroport et chauffeur privé pour voyager confortablement sur tous types de routes.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 mb-8 list-none font-semibold">
+                            <li>📍 Inclus : chauffeur pro, assistance, carburant.</li>
+                            <li>📍 Idéal : circuits inter-villes, parcs et missions.</li>
+                        </ul>
+                        <div class="flex gap-4">
+                            <a href="login.html" data-protected="tarifs" class="flex-1 text-center bg-[#06377b] text-white font-bold py-3 rounded-xl hover:bg-[#04295f] transition shadow-lg">Tarifs</a>
+                            <a href="login.html" data-protected="devis" class="flex-1 text-center bg-yellow-500 text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition shadow-lg">Devis</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="service-card bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="img/hotel-selton.jpg" alt="Hôtellerie" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                            <span class="text-[#06377b] font-black text-xs uppercase">Dès 70$ / nuit</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <h2 class="text-2xl font-black text-[#06377b] mb-4">Hôtellerie & Lodges</h2>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">Sélection d’hébergements testés : hôtels urbains, éco-lodges et séjours proches des grands sites naturels.</p>
+                        <ul class="text-xs text-slate-500 space-y-2 mb-8 list-none font-semibold">
+                            <li>📍 Inclus : réservation assistée et confirmation.</li>
+                            <li>📍 Catégories : économique, confort, premium.</li>
+                        </ul>
+                        <div class="flex gap-4">
+                            <a href="login.html" data-protected="tarifs" class="flex-1 text-center bg-[#06377b] text-white font-bold py-3 rounded-xl hover:bg-[#04295f] transition shadow-lg">Tarifs</a>
+                            <a href="login.html" data-protected="devis" class="flex-1 text-center bg-yellow-500 text-slate-900 font-bold py-3 rounded-xl hover:bg-yellow-400 transition shadow-lg">Devis</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-white py-20 border-y border-slate-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-black text-[#06377b] mb-12 italic">Comment ça marche ?</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-inner transition">
+                        <div class="w-12 h-12 bg-yellow-500 text-slate-900 font-black flex items-center justify-center rounded-full mx-auto mb-4">1</div>
+                        <h3 class="text-xl font-black text-[#06377b] mb-4 uppercase">Choisissez votre service</h3>
+                        <p class="text-slate-600 text-sm">Sélectionnez guide, transport, hébergement ou un pack sur mesure selon votre itinéraire.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-inner transition">
+                        <div class="w-12 h-12 bg-yellow-500 text-slate-900 font-black flex items-center justify-center rounded-full mx-auto mb-4">2</div>
+                        <h3 class="text-xl font-black text-[#06377b] mb-4 uppercase">Connectez-vous</h3>
+                        <p class="text-slate-600 text-sm">Accédez aux prix détaillés, options, disponibilités et sécurisez votre demande en quelques clics.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-inner transition">
+                        <div class="w-12 h-12 bg-yellow-500 text-slate-900 font-black flex items-center justify-center rounded-full mx-auto mb-4">3</div>
+                        <h3 class="text-xl font-black text-[#06377b] mb-4 uppercase">Validez votre réservation</h3>
+                        <p class="text-slate-600 text-sm">Notre équipe confirme votre programme et vous accompagne jusqu’au départ.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
-                <img src="../img/hotel-selton.jpg" alt="Hôtellerie" class="w-full h-64 object-cover">
-                <div class="p-8">
-                    <h2 class="text-3xl font-bold text-[#06377be9] mb-4">
-                        Réservation Hôtellerie
-                    </h2>
-                    <p class="text-[#06377be9] mb-6">
-                        Des hôtels de luxe aux éco-lodges au cœur de la brousse, nous vous trouvons le meilleur
-                        hébergement adapté à votre budget et à vos envies.
-                    </p>
-                    <a href="login.html"
-                        class="service-link block text-center bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-600 transition duration-300">
-                        Voir les Prix (Connexion requise)
-                    </a>
+        <section class="container mx-auto px-4 py-20 text-center">
+            <h2 class="text-3xl font-black text-[#06377b] mb-12 italic">Confiance & Partenaires</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-50">
+                    <p class="text-4xl font-black text-[#06377b] mb-2">+200</p>
+                    <p class="text-slate-500 font-bold text-sm uppercase">itinéraires accompagnés</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-50">
+                    <p class="text-4xl font-black text-[#06377b] mb-2">24/7</p>
+                    <p class="text-slate-500 font-bold text-sm uppercase">support client local</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-50">
+                    <p class="text-4xl font-black text-[#06377b] mb-2">100%</p>
+                    <p class="text-slate-500 font-bold text-sm uppercase">expérience sécurisée</p>
                 </div>
             </div>
-
-        </div>
-
+            <div class="flex justify-center items-center gap-12 flex-wrap">
+                <img src="img/iccn.jpg" class="h-20 w-20 rounded-full grayscale hover:grayscale-0 transition duration-500" alt="ICCN">
+                <img src="img/unesco.png" class="h-20 w-20 grayscale hover:grayscale-0 transition duration-500" alt="UNESCO">
+                <img src="img/kahuzi biega.png" class="h-20 w-20 grayscale hover:grayscale-0 transition duration-500" alt="Kahuzi Biega">
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-gray-900 text-white py-8 mt-16">
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-white/5">
         <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 VISIT DRC. Tous droits réservés.</p>
+            <p class="text-white font-bold mb-4">VISIT DRC</p>
+            <p class="text-sm italic">&copy; 2024 VISIT DRC. Tous droits réservés.</p>
         </div>
     </footer>
 
-</body>
+    <div id="service-modal" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/60 p-4 backdrop-blur-sm">
+        <div class="w-full max-w-xl rounded-3xl bg-white p-8 shadow-2xl scale-up">
+            <div class="flex items-start justify-between gap-4">
+                <h3 id="modal-title" class="text-2xl font-black text-[#06377b]"></h3>
+                <button id="close-modal" class="text-slate-400 hover:text-red-500 text-xl font-bold transition">✕</button>
+            </div>
+            <p id="modal-text" class="mt-4 text-slate-600 leading-relaxed"></p>
+            <div id="modal-box" class="mt-6 rounded-2xl bg-slate-50 border p-6 text-slate-700 text-sm shadow-inner"></div>
+            <div class="mt-8 flex flex-wrap gap-3">
+                <a href="login.html" id="modal-login-link" class="px-8 py-3 rounded-full bg-[#06377b] text-white font-bold hover:bg-[#04295f] transition shadow-lg">Se connecter</a>
+                <a href="signup.html" class="px-8 py-3 rounded-full bg-yellow-500 text-slate-900 font-bold hover:bg-yellow-400 transition shadow-lg">Créer un compte</a>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        function getCurrentUser() {
+            try {
+                const user = localStorage.getItem('visit_drc_current_user');
+                return user ? JSON.parse(user) : null;
+            } catch (error) { return null; }
+        }
+
+        function openServiceModal(type) {
+            const modal = document.getElementById('service-modal');
+            const title = document.getElementById('modal-title');
+            const text = document.getElementById('modal-text');
+            const box = document.getElementById('modal-box');
+            const loginLink = document.getElementById('modal-login-link');
+            const currentUser = getCurrentUser();
+
+            if (currentUser) {
+                loginLink.classList.add('hidden');
+                if (type === 'tarifs') {
+                    title.textContent = 'Grille tarifaire (compte connecté)';
+                    text.textContent = `Bienvenue ${currentUser.name || ''}. Voici ce qui s’affiche après clic sur "Voir les tarifs".`;
+                    box.innerHTML = `<ul class="list-disc pl-5 space-y-1 font-bold"><li>Guide & Interprète: dès 90$ / jour</li><li>Transport privé: dès 120$ / jour</li><li>Hôtellerie: dès 70$ / nuit</li></ul><p class="mt-3 italic">Étape suivante: valider votre demande pour recevoir le tarif final.</p>`;
+                } else {
+                    title.textContent = 'Demande de devis (compte connecté)';
+                    text.textContent = `Bienvenue ${currentUser.name || ''}. Votre clic "Demander un devis" ouvre ce résumé.`;
+                    box.innerHTML = `<ul class="list-disc pl-5 space-y-1 font-bold"><li>Service choisi (Guide / Transport / Hôtel)</li><li>Dates du voyage et effectif</li><li>Ville de départ et sites</li></ul><p class="mt-3 italic">Un agent vous enverra une offre personnalisée.</p>`;
+                }
+            } else {
+                loginLink.classList.remove('hidden');
+                title.textContent = 'Connexion requise';
+                text.textContent = 'Vous devez vous connecter pour accéder aux tarifs détaillés et envoyer une demande de devis.';
+                box.innerHTML = '<p class="font-bold">Après connexion, vous verrez les prix adaptés à votre circuit et pourrez envoyer votre demande en quelques clics.</p>';
+                loginLink.href = `login.html?redirect=${encodeURIComponent('services.html')}`;
+            }
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        document.querySelectorAll('[data-protected]').forEach(link => {
+            link.addEventListener('click', (e) => { e.preventDefault(); openServiceModal(link.dataset.protected); });
+        });
+
+        document.getElementById('close-modal').addEventListener('click', () => { document.getElementById('service-modal').classList.add('hidden'); });
+    </script>
+</body>
 </html>

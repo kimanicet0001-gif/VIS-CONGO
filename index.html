@@ -135,43 +135,24 @@
 
 <body class="bg-gray-50 font-sans w-full">
 
-    <header class=" backdrop-blur-[3px]  bg-opacity-100  bg-[#06377be9] sticky top-0 z-50 shadow-md">
-
-        <nav class="container  mx-auto px-4 h-[12vh] flex justify-between items-center">
-
-            <div class="logo flex w-[40%] gap-2">
-                <div class="pt-2">
-                    <img src="img/cafe.jpg" class=" rounded-4xl w-[9vh] object-cover " alt="">
+    <header class="backdrop-blur-md bg-[#06377be9]/90 sticky top-0 z-50 shadow-lg border-b border-white/10">
+        <nav class="container mx-auto px-6 h-[12vh] flex justify-between items-center">
+            <div class="logo flex items-center gap-3">
+                <img src="img/cafe.jpg" class="rounded-full w-14 h-14 object-cover border-2 border-yellow-500 shadow-inner" alt="Logo">
+                <div class="flex flex-col">
+                    <span class="text-2xl font-black text-white leading-none">VISIT <span class="text-yellow-500">DRC</span></span>
+                    <span class="text-[10px] text-yellow-200 tracking-[0.3em] uppercase">Expérience Unique</span>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27vh"
-                    height="9vh">
-                    <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="1rem" x="0px" y="50px">
-                        <tspan font-size="2rem" font-family="Bleeding Cowboys" fill="#FFFFFF">VISIT</tspan>
-                        <tspan font-size="2rem" font-family="Bleeding Cowboys" fill="#F9BB15">&#32;DRC</tspan>
-                    </text>
-                </svg>
             </div>
 
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="Accueil.html" class="nav-link  text-[whitesmoke] hover:text-yellow-500 font-semibold">Accueil</a>
-                <a href="apropos.html" class="nav-link  text-[whitesmoke] hover:text-yellow-500 font-semibold">À
-                    Propos</a>
-
-                <a href="services.html"
-                    class="nav-link  text-[whitesmoke] hover:text-yellow-500 font-semibold">Services</a>
-
-                <a href="login.html" id="Connexion"
-                    class="px-5 py-2 border hover:border-[whitesmoke] text-[#06377be9] rounded-full hover:bg-[#06377b00] bg-[whitesmoke] hover:text-[whitesmoke] transition duration-300 font-semibold">
+            <div class="hidden md:flex space-x-10 items-center">
+                <a href="index.html" class="nav-link-hover text-white/90 hover:text-yellow-500 font-semibold transition">Accueil</a>
+                <a href="apropos.html" class="nav-link-hover text-white/90 hover:text-yellow-500 font-semibold transition">À Propos</a>
+                <a href="services.html" class="text-yellow-500 font-bold border-b-2 border-yellow-500">Services</a>
+                <a href="login.html" class="px-7 py-2.5 bg-yellow-500 text-[#06377b] rounded-full font-extrabold hover:bg-white transition-all transform hover:scale-105 shadow-md">
                     Connexion
-
-                </a>
-                <a href="/logout"
-                    class="px-5 py-2 bg-red-600 text-[whitesmoke] rounded-full hover:bg-red-700 transition duration-300 font-semibold hidden">
-                    Déconnexion
                 </a>
             </div>
-
-
         </nav>
     </header>
 

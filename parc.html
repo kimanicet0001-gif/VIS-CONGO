@@ -1,235 +1,503 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VISIT DRC | Parcs</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../src/output.css" />
     <style>
-        /* Animation pour le JavaScript */
-
+      /* Animation pour le JavaScript */
     </style>
-</head>
+  </head>
 
-<body class="bg-[whitesmoke] font-sans antialiased">
-
-    <header class="backdrop-blur-[3px] bg-opacity-100 bg-[#06377be9] sticky top-0 z-50 shadow-md">
-        <nav class="container mx-auto px-4 h-[12vh] py-2 flex justify-between items-center">
-            <div class="logo flex w-[40%] gap-2">
-                <div class="pt-2">
-                    <img src="img/cafe.jpg" class="rounded-4xl w-[9vh] object-cover" alt="">
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27vh" height="9vh">
-                    <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="1rem" x="0px" y="50px">
-                        <tspan font-size="2rem" font-family="Bleeding Cowboys" fill="#FFFFFF">VISIT</tspan>
-                        <tspan font-size="2rem" font-family="Bleeding Cowboys" fill="#F9BB15">&#32;DRC</tspan>
-                    </text>
-                </svg>
-            </div>
-            <div class="space-x-4">
-                <a href="index.html" class="hover:bg-[#06377b00] rounded-4xl px-5 py-2 border bg-[whitesmoke] hover:text-[whitesmoke] hover:border-[whitesmoke] text-[#06377be9] font-medium">Retour à l'Accueil</a>
-            </div>
-        </nav>
+  <body class="bg-[whitesmoke] font-sans antialiased">
+    <header
+      class="backdrop-blur-[3px] bg-opacity-100 bg-[#06377be9] sticky top-0 z-50 shadow-md"
+    >
+      <nav
+        class="container mx-auto px-4 h-[12vh] py-2 flex justify-between items-center"
+      >
+        <div class="logo flex items-center gap-3">
+          <img
+            src="img/cafe.jpg"
+            class="rounded-full w-14 h-14 object-cover border-2 border-yellow-500 shadow-inner"
+            alt="Logo"
+          />
+          <div class="flex flex-col">
+            <span class="text-2xl font-black text-white leading-none"
+              >VISIT <span class="text-yellow-500">DRC</span></span
+            >
+            <span class="text-[10px] text-yellow-200 tracking-[0.3em] uppercase"
+              >Expérience Unique</span
+            >
+          </div>
+        </div>
+        <div class="space-x-4">
+          <a
+            href="index.html"
+            class="hover:bg-[#06377b00] rounded-4xl px-5 py-2 border bg-[whitesmoke] hover:text-[whitesmoke] hover:border-[whitesmoke] text-[#06377be9] font-medium"
+            >Retour à l'Accueil</a
+          >
+        </div>
+      </nav>
     </header>
 
     <main class="parc w-full h-auto">
-        <h1 class="bg-[whitesmoke] sticky z-10 top-19 text-5xl font-extrabold text-center text-[#073a81da] border-b-2 mx-20 border-yellow-500 pb-4 pt-5">
-            Parcs Nationaux & Faune
-        </h1>
+      <h1
+        class="bg-[whitesmoke] sticky z-10 top-19 text-5xl font-extrabold text-center text-[#073a81da] border-b-2 mx-20 border-yellow-500 pb-4 pt-5"
+      >
+        Parcs Nationaux & Faune
+      </h1>
 
-        <div class="relative shadow-2xl rounded-md w-[85%] h-auto mx-auto mt-10 px-10 bg-white">
-
-            <div class="reveal">
-                <h1 class="text-[#073a81da] text-3xl font-bold text-center mt-5">La République Démocratique du Congo, terre sauvage et inexplorée</h1>
-                <p class="pt-5 px-7 font-semibold text-center text-[#073a81da]">
-                    La République Démocratique du Congo est l’un des derniers grands sanctuaires naturels de la planète. Son immense territoire abrite une mosaïque de paysages spectaculaires : savanes infinies, forêts tropicales primaires, volcans actifs, montagnes enneigées, rivières majestueuses et zones humides préservées.
-                    <br><br>
-                    À travers ses parcs nationaux, le Congo offre une expérience unique aux voyageurs en quête d’aventure, de nature authentique et de rencontres avec une faune parmi les plus riches d’Afrique. Ces espaces protégés sont de véritables trésors écologiques, reconnus mondialement et classés pour plusieurs d’entre eux au patrimoine mondial de l’UNESCO.
-                </p>
-            </div>
-
-            <div class="reveal mt-10 justify-center items-center gap-10 flex w-full h-auto px-7">
-                <div class="img-container w-[40%] h-[35vh]"><img src="img/pexels-davukilo-11612743.jpg" alt="" class="w-full h-full object-cover"></div>
-                <div class="img-container w-[40%] h-[35vh]"><img src="img/pexels-hashim-gaad-356973125-14436926.jpg" alt="" class="w-full h-full object-cover"></div>
-            </div>
-            <div class="reveal mt-5 justify-center items-center gap-10 flex w-full h-auto px-7">
-                <div class="img-container w-[40%] h-[35vh]"><img src="img/pexels-toza-34445923.jpg" alt="" class="w-full h-full object-cover"></div>
-                <div class="img-container w-[40%] h-[35vh]"><img src="img/gorille.jpg" alt="" class="w-full h-full object-cover"></div>
-            </div>
-
-            <div class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5 mt-10">
-                <div class="w-[60%] h-auto">
-                    <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">Parc national de la Garamba</h1>
-                    <p><span class="font-semibold">Le charme sauvage des grandes savanes africaines</span><br>
-                        Situé au nord-est de la RDC, à la frontière du Soudan du Sud, le parc national de la Garamba est l’un des plus anciens parcs d’Afrique. Créé en 1938, il s’étend sur plus de 5 000 km² de vastes savanes ondulantes ponctuées de rivières et de galeries forestières.
-                        <br><br>
-                        Classé patrimoine mondial de l’UNESCO, la Garamba est célèbre pour ses paysages ouverts et sa faune emblématique. Les visiteurs peuvent y observer des éléphants, des girafes de Kordofan (uniques en RDC), des buffles, des hippopotames, des lions, des hyènes et de nombreuses espèces d’antilopes.
-                        <br><br>
-                        Avec près de 300 espèces d’oiseaux, le parc est également un paradis pour les amateurs d’ornithologie. Aujourd’hui, grâce aux efforts conjoints de <strong>l’ICCN et d’African Parks, la Garamba</strong> se redresse progressivement et s’ouvre à un tourisme de découverte responsable. <br><br>
-                        <em>Un souffle de savane intacte, où la nature règne encore en souveraine et où l’Afrique se révèle dans sa forme la plus pure.</em>
-                    </p>
-                </div>
-                <div class="w-[40%] h-auto py-10">
-                    <div class="img-container"><img src="img/gorille.jpg" alt="" class="w-full h-[50vh] object-cover shadow-2xl"></div>
-                </div>
-            </div>
-
-            <div class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5">
-                <div class="w-[40%] h-auto py-10">
-                    <div class="img-container"><img src="img/gorille.jpg" alt="" class="w-full h-[50vh] object-cover shadow-2xl"></div>
-                </div>
-                <div class="w-[60%] h-auto">
-                    <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">Parc national des Virunga</h1>
-                    <p><span class="font-semibold">Le charme sauvage des grandes savanes africaines</span><br>
-                        Entre volcans, gorilles et montagnes légendaires
-                        <br><br>
-                        À l’est du pays se trouve le mythique parc national des Virunga, le plus ancien parc national d’Afrique, créé en 1925. Couvrant environ 8 090 km², il s’étend le long des frontières avec l’Ouganda et le Rwanda.
-                        <br><br>
-                        Les Virunga offrent une diversité de paysages sans équivalent : savanes, forêts tropicales, lacs, volcans actifs comme le Nyiragongo, et les montagnes des Rwenzori culminant à plus de 5 000 mètres.
-                        <br><br>
-                        Le parc est mondialement reconnu pour la protection des gorilles de montagne, mais abrite aussi chimpanzés, singes dorés, éléphants, hippopotames et plus de 3 000 espèces animales et végétales.
-                        <br><br>
-                        Au-delà de la conservation, les Virunga proposent des expériences touristiques uniques : randonnées volcaniques, observation des gorilles, safaris et découverte des communautés locales. <br><br>
-                        <em>Pour le visiteur, ces rivières offrent des expériences uniques : navigation paisible, découverte de villages riverains, observation de la faune et immersion dans des environnements naturels encore préservés.</em>
-                    </p>
-                </div>
-            </div>
-
-            <div class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5">
-                <div class="w-[60%] h-auto">
-                    <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">Parc national de la Salonga</h1>
-                    <p><span class="font-semibold">Le cœur vert et secret de l’Afrique</span><br>
-                        Au centre du bassin du fleuve Congo s’étend le parc national de la Salonga, la plus vaste réserve de forêt tropicale humide d’Afrique, couvrant près de 36 000 km².
-                        <br><br>
-                        Classé patrimoine mondial de l’UNESCO, ce parc offre une immersion rare dans une forêt primaire presque intacte. Accessible principalement par voie fluviale, Salonga est un paradis pour les amoureux de la nature et de l’aventure hors des sentiers battus.
-                        <br><br>
-                        Il abrite des espèces emblématiques comme le bonobo, endémique de la RDC, ainsi que des éléphants de forêt, des léopards, des pangolins et le célèbre paon du Congo. La participation active des communautés locales renforce une approche durable et respectueuse du tourisme. <br><br>
-                        <em>Au cœur du bassin du Congo, Salonga est un sanctuaire silencieux et majestueux, où la forêt règne sans partage. Un voyage hors du temps, réservé aux amoureux de nature brute et d’aventure authentique.</em>
-                    </p>
-                </div>
-                <div class="w-[40%] h-auto py-10">
-                    <div class="img-container"><img src="img/gorille.jpg" alt="" class="w-full h-[50vh] object-cover shadow-2xl"></div>
-                </div>
-            </div>
-
-            <div class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5">
-                <div class="w-[40%] h-auto py-10">
-                    <div class="img-container"><img src="img/gorille.jpg" alt="" class="w-full h-[50vh] object-cover shadow-2xl"></div>
-                </div>
-                <div class="w-[60%] h-auto">
-                    <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">Parc national de l’Upemba</h1>
-                    <p><span class="font-semibold">Lacs, marécages et hauts plateaux</span><br>
-                        Créé en 1939, le parc national de l’Upemba est l’un des plus anciens parcs du pays. Situé dans le sud-est de la RDC, il couvre aujourd’hui environ 10 000 km².
-                        <br><br>
-                        Le parc se distingue par la diversité de ses paysages : lacs, marécages, savanes et plateaux d’altitude. Cette variété en fait un refuge important pour de nombreuses espèces animales et végétales et un site d’intérêt pour l’écotourisme et la recherche scientifique.
-                        <br><br>
-                        <em>Upemba séduit par ses paysages variés, ses lacs paisibles et ses vastes étendues sauvages. Un parc discret et mystérieux, où la nature se dévoile lentement à ceux qui prennent le temps de l’explorer.</em>
-                    </p>
-                </div>
-            </div>
-
-            <div class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5">
-                <div class="w-[60%] h-auto">
-                    <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">Parc national de Kahuzi-Biega</h1>
-                    <p><span class="font-semibold">Sur les traces du gorille de plaine de l’Est</span><br>
-                        À proximité de Bukavu et du lac Kivu, le parc national de Kahuzi-Biega est l’un des joyaux écologiques de la RDC. Créé en 1970, il s’étend sur environ 6 000 km².
-                        <br><br>
-                        Ce parc est l’un des derniers refuges du gorille de plaine de l’Est, espèce rare et menacée. Il offre également une diversité exceptionnelle de milieux naturels : forêts équatoriales, forêts de montagne, bambouseraies et landes d’altitude.
-                        <br><br>
-                        Avec plus de 1 100 espèces végétales et une faune abondante, Kahuzi-Biega est une destination privilégiée pour les amoureux de la nature et de la randonnée. <br><br>
-                        <em>Kahuzi-Biega est une rencontre rare avec une nature fragile et précieuse, dominée par les montagnes et la forêt de brume. Un lieu d’émotion, où chaque regard posé sur le paysage devient un souvenir inoubliable.</em>
-                    </p>
-                </div>
-                <div class="w-[40%] h-auto py-10">
-                    <div class="img-container"><img src="img/gorille.jpg" alt="" class="w-full h-[50vh] object-cover shadow-2xl"></div>
-                </div>
-            </div>
-
-            <div class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5">
-                <div class="w-[40%] h-auto py-10">
-                    <div class="img-container"><img src="img/gorille.jpg" alt="" class="w-full h-[50vh] object-cover shadow-2xl"></div>
-                </div>
-                <div class="w-[60%] h-auto">
-                    <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">Parc marin des Mangroves</h1>
-                    <p><span class="font-semibold">La RDC face à l’océan Atlantique</span><br>
-                        Situé à Muanda, le parc marin des Mangroves est le seul parc marin du pays. Créé en 1992, il protège 768 km² de mangroves et d’écosystèmes côtiers uniques en Afrique centrale.
-                        <br><br>
-                        Ce parc joue un rôle essentiel dans la conservation du lamantin, mais aussi des crocodiles, hippopotames et nombreuses espèces aquatiques. Il offre une facette méconnue et surprenante de la RDC.
-                        <br><br>
-                        <em>Entre terre et océan, le parc des Mangroves protège un écosystème unique et fascinant. Une invitation à découvrir un monde discret mais essentiel, où la biodiversité s’épanouit au rythme des marées.</em>
-                    </p>
-                </div>
-            </div>
-
-            <div class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5">
-                <div class="w-[60%] h-auto">
-                    <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">Parc national de Kundelungu</h1>
-                    <p><span class="font-semibold">Les chutes les plus spectaculaires du Congo</span><br>
-                        Situé dans la province du Haut-Katanga, le parc national de Kundelungu se distingue par ses vastes paysages de savanes ondulantes, ses plateaux rocheux et ses vallées profondes. Il est surtout réputé pour les impressionnantes chutes de la Lofoi, hautes de près de 340 mètres, considérées comme les plus hautes chutes d’eau de la République Démocratique du Congo.
-                        <br><br>
-                        Le parc abrite une faune variée comprenant des antilopes, des buffles, des singes, des reptiles ainsi qu’une riche diversité d’oiseaux, faisant de Kundelungu un lieu privilégié pour l’observation de la nature et la photographie. Encore relativement peu fréquenté, il offre aux visiteurs un cadre paisible et authentique, idéal pour l’exploration et la contemplation. <br><br>
-                        <em>Kundelungu impressionne par ses vastes savanes et ses chutes spectaculaires, véritables joyaux naturels du sud de la RDC. Un espace grandiose, propice à la contemplation et à l’évasion.</em>
-                    </p>
-                </div>
-                <div class="w-[40%] h-auto py-10">
-                    <div class="img-container"><img src="img/gorille.jpg" alt="" class="w-full h-[50vh] object-cover shadow-2xl"></div>
-                </div>
-            </div>
-
-            <div class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5">
-                <div class="w-[40%] h-auto py-10">
-                    <div class="img-container"><img src="img/gorille.jpg" alt="" class="w-full h-[50vh] object-cover shadow-2xl"></div>
-                </div>
-                <div class="w-[60%] h-auto">
-                    <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">Parc national de la Maïko</h1>
-                    <p><span class="font-semibold">L’aventure à l’état pur</span><br>
-                        Isolé et profondément sauvage, le parc national de la Maïko s’étend sur près de 10 885 km² de forêts tropicales denses, au cœur de l’une des régions les plus reculées de la RDC. Son éloignement et son accès difficile ont permis de préserver un écosystème exceptionnel, presque intact.
-                        <br><br>
-                        Le parc protège des espèces emblématiques et rares telles que l’okapi, le gorille de plaine, le chimpanzé, ainsi qu’une grande diversité d’oiseaux et de mammifères forestiers. Très peu fréquenté, Maïko attire principalement les chercheurs, les naturalistes et les voyageurs en quête d’aventure authentique et de découvertes hors des sentiers battus.
-                        <br><br>
-                        <em>Maïko demeure l’un des derniers territoires véritablement sauvages du pays, profond, isolé et intact. Un parc pour les voyageurs en quête d’authenticité et de nature à l’état pur.</em>
-                    </p>
-                </div>
-            </div>
-
-            <div class="reveal text-[#073a81da] w-full h-auto pt-8 px-7 mb-10">
-                <p class="text-center text-[#073a81da]">
-                    <em>
-                        Les parcs nationaux de la République Démocratique du Congo offrent bien plus qu’un simple voyage : ils proposent une immersion dans l’une des dernières grandes terres sauvages du monde.
-                        <br><br>
-                        Venir au Congo, c’est vivre la nature à l’état brut, rencontrer une faune exceptionnelle et découvrir des paysages que peu ont encore explorés.
-                        <br><br>
-                        <strong>Un voyage au cœur de l’une des dernières grandes terres sauvages de la planète, là où l’eau est reine et la vie foisonne.</strong>
-                    </em>
-                </p>
-            </div>
+      <div
+        class="relative shadow-2xl rounded-md w-[85%] h-auto mx-auto mt-10 px-10 bg-white"
+      >
+        <div class="reveal">
+          <h1 class="text-[#073a81da] text-3xl font-bold text-center mt-5">
+            La République Démocratique du Congo, terre sauvage et inexplorée
+          </h1>
+          <p class="pt-5 px-7 font-semibold text-center text-[#073a81da]">
+            La République Démocratique du Congo est l’un des derniers grands
+            sanctuaires naturels de la planète. Son immense territoire abrite
+            une mosaïque de paysages spectaculaires : savanes infinies, forêts
+            tropicales primaires, volcans actifs, montagnes enneigées, rivières
+            majestueuses et zones humides préservées.
+            <br /><br />
+            À travers ses parcs nationaux, le Congo offre une expérience unique
+            aux voyageurs en quête d’aventure, de nature authentique et de
+            rencontres avec une faune parmi les plus riches d’Afrique. Ces
+            espaces protégés sont de véritables trésors écologiques, reconnus
+            mondialement et classés pour plusieurs d’entre eux au patrimoine
+            mondial de l’UNESCO.
+          </p>
         </div>
 
-        <footer class="bg-gray-900 text-white py-8 text-center mt-10">
-            <p>&copy; 2024 VISIT DRC.</p>
-        </footer>
+        <div
+          class="reveal mt-10 justify-center items-center gap-10 flex w-full h-auto px-7"
+        >
+          <div class="img-container w-[40%] h-[35vh]">
+            <img
+              src="img/pexels-davukilo-11612743.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="img-container w-[40%] h-[35vh]">
+            <img
+              src="img/pexels-hashim-gaad-356973125-14436926.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        <div
+          class="reveal mt-5 justify-center items-center gap-10 flex w-full h-auto px-7"
+        >
+          <div class="img-container w-[40%] h-[35vh]">
+            <img
+              src="img/pexels-toza-34445923.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="img-container w-[40%] h-[35vh]">
+            <img
+              src="img/gorille.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <div
+          class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5 mt-10"
+        >
+          <div class="w-[60%] h-auto">
+            <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">
+              Parc national de la Garamba
+            </h1>
+            <p>
+              <span class="font-semibold"
+                >Le charme sauvage des grandes savanes africaines</span
+              ><br />
+              Situé au nord-est de la RDC, à la frontière du Soudan du Sud, le
+              parc national de la Garamba est l’un des plus anciens parcs
+              d’Afrique. Créé en 1938, il s’étend sur plus de 5 000 km² de
+              vastes savanes ondulantes ponctuées de rivières et de galeries
+              forestières.
+              <br /><br />
+              Classé patrimoine mondial de l’UNESCO, la Garamba est célèbre pour
+              ses paysages ouverts et sa faune emblématique. Les visiteurs
+              peuvent y observer des éléphants, des girafes de Kordofan (uniques
+              en RDC), des buffles, des hippopotames, des lions, des hyènes et
+              de nombreuses espèces d’antilopes.
+              <br /><br />
+              Avec près de 300 espèces d’oiseaux, le parc est également un
+              paradis pour les amateurs d’ornithologie. Aujourd’hui, grâce aux
+              efforts conjoints de
+              <strong>l’ICCN et d’African Parks, la Garamba</strong> se redresse
+              progressivement et s’ouvre à un tourisme de découverte
+              responsable. <br /><br />
+              <em
+                >Un souffle de savane intacte, où la nature règne encore en
+                souveraine et où l’Afrique se révèle dans sa forme la plus
+                pure.</em
+              >
+            </p>
+          </div>
+          <div class="w-[40%] h-auto py-10">
+            <div class="img-container">
+              <img
+                src="img/gorille.jpg"
+                alt=""
+                class="w-full h-[50vh] object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5"
+        >
+          <div class="w-[40%] h-auto py-10">
+            <div class="img-container">
+              <img
+                src="img/gorille.jpg"
+                alt=""
+                class="w-full h-[50vh] object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+          <div class="w-[60%] h-auto">
+            <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">
+              Parc national des Virunga
+            </h1>
+            <p>
+              <span class="font-semibold"
+                >Le charme sauvage des grandes savanes africaines</span
+              ><br />
+              Entre volcans, gorilles et montagnes légendaires
+              <br /><br />
+              À l’est du pays se trouve le mythique parc national des Virunga,
+              le plus ancien parc national d’Afrique, créé en 1925. Couvrant
+              environ 8 090 km², il s’étend le long des frontières avec
+              l’Ouganda et le Rwanda.
+              <br /><br />
+              Les Virunga offrent une diversité de paysages sans équivalent :
+              savanes, forêts tropicales, lacs, volcans actifs comme le
+              Nyiragongo, et les montagnes des Rwenzori culminant à plus de 5
+              000 mètres.
+              <br /><br />
+              Le parc est mondialement reconnu pour la protection des gorilles
+              de montagne, mais abrite aussi chimpanzés, singes dorés,
+              éléphants, hippopotames et plus de 3 000 espèces animales et
+              végétales.
+              <br /><br />
+              Au-delà de la conservation, les Virunga proposent des expériences
+              touristiques uniques : randonnées volcaniques, observation des
+              gorilles, safaris et découverte des communautés locales.
+              <br /><br />
+              <em
+                >Pour le visiteur, ces rivières offrent des expériences uniques
+                : navigation paisible, découverte de villages riverains,
+                observation de la faune et immersion dans des environnements
+                naturels encore préservés.</em
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5"
+        >
+          <div class="w-[60%] h-auto">
+            <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">
+              Parc national de la Salonga
+            </h1>
+            <p>
+              <span class="font-semibold"
+                >Le cœur vert et secret de l’Afrique</span
+              ><br />
+              Au centre du bassin du fleuve Congo s’étend le parc national de la
+              Salonga, la plus vaste réserve de forêt tropicale humide
+              d’Afrique, couvrant près de 36 000 km².
+              <br /><br />
+              Classé patrimoine mondial de l’UNESCO, ce parc offre une immersion
+              rare dans une forêt primaire presque intacte. Accessible
+              principalement par voie fluviale, Salonga est un paradis pour les
+              amoureux de la nature et de l’aventure hors des sentiers battus.
+              <br /><br />
+              Il abrite des espèces emblématiques comme le bonobo, endémique de
+              la RDC, ainsi que des éléphants de forêt, des léopards, des
+              pangolins et le célèbre paon du Congo. La participation active des
+              communautés locales renforce une approche durable et respectueuse
+              du tourisme. <br /><br />
+              <em
+                >Au cœur du bassin du Congo, Salonga est un sanctuaire
+                silencieux et majestueux, où la forêt règne sans partage. Un
+                voyage hors du temps, réservé aux amoureux de nature brute et
+                d’aventure authentique.</em
+              >
+            </p>
+          </div>
+          <div class="w-[40%] h-auto py-10">
+            <div class="img-container">
+              <img
+                src="img/gorille.jpg"
+                alt=""
+                class="w-full h-[50vh] object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5"
+        >
+          <div class="w-[40%] h-auto py-10">
+            <div class="img-container">
+              <img
+                src="img/gorille.jpg"
+                alt=""
+                class="w-full h-[50vh] object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+          <div class="w-[60%] h-auto">
+            <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">
+              Parc national de l’Upemba
+            </h1>
+            <p>
+              <span class="font-semibold"
+                >Lacs, marécages et hauts plateaux</span
+              ><br />
+              Créé en 1939, le parc national de l’Upemba est l’un des plus
+              anciens parcs du pays. Situé dans le sud-est de la RDC, il couvre
+              aujourd’hui environ 10 000 km².
+              <br /><br />
+              Le parc se distingue par la diversité de ses paysages : lacs,
+              marécages, savanes et plateaux d’altitude. Cette variété en fait
+              un refuge important pour de nombreuses espèces animales et
+              végétales et un site d’intérêt pour l’écotourisme et la recherche
+              scientifique.
+              <br /><br />
+              <em
+                >Upemba séduit par ses paysages variés, ses lacs paisibles et
+                ses vastes étendues sauvages. Un parc discret et mystérieux, où
+                la nature se dévoile lentement à ceux qui prennent le temps de
+                l’explorer.</em
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5"
+        >
+          <div class="w-[60%] h-auto">
+            <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">
+              Parc national de Kahuzi-Biega
+            </h1>
+            <p>
+              <span class="font-semibold"
+                >Sur les traces du gorille de plaine de l’Est</span
+              ><br />
+              À proximité de Bukavu et du lac Kivu, le parc national de
+              Kahuzi-Biega est l’un des joyaux écologiques de la RDC. Créé en
+              1970, il s’étend sur environ 6 000 km².
+              <br /><br />
+              Ce parc est l’un des derniers refuges du gorille de plaine de
+              l’Est, espèce rare et menacée. Il offre également une diversité
+              exceptionnelle de milieux naturels : forêts équatoriales, forêts
+              de montagne, bambouseraies et landes d’altitude.
+              <br /><br />
+              Avec plus de 1 100 espèces végétales et une faune abondante,
+              Kahuzi-Biega est une destination privilégiée pour les amoureux de
+              la nature et de la randonnée. <br /><br />
+              <em
+                >Kahuzi-Biega est une rencontre rare avec une nature fragile et
+                précieuse, dominée par les montagnes et la forêt de brume. Un
+                lieu d’émotion, où chaque regard posé sur le paysage devient un
+                souvenir inoubliable.</em
+              >
+            </p>
+          </div>
+          <div class="w-[40%] h-auto py-10">
+            <div class="img-container">
+              <img
+                src="img/gorille.jpg"
+                alt=""
+                class="w-full h-[50vh] object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5"
+        >
+          <div class="w-[40%] h-auto py-10">
+            <div class="img-container">
+              <img
+                src="img/gorille.jpg"
+                alt=""
+                class="w-full h-[50vh] object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+          <div class="w-[60%] h-auto">
+            <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">
+              Parc marin des Mangroves
+            </h1>
+            <p>
+              <span class="font-semibold">La RDC face à l’océan Atlantique</span
+              ><br />
+              Situé à Muanda, le parc marin des Mangroves est le seul parc marin
+              du pays. Créé en 1992, il protège 768 km² de mangroves et
+              d’écosystèmes côtiers uniques en Afrique centrale.
+              <br /><br />
+              Ce parc joue un rôle essentiel dans la conservation du lamantin,
+              mais aussi des crocodiles, hippopotames et nombreuses espèces
+              aquatiques. Il offre une facette méconnue et surprenante de la
+              RDC.
+              <br /><br />
+              <em
+                >Entre terre et océan, le parc des Mangroves protège un
+                écosystème unique et fascinant. Une invitation à découvrir un
+                monde discret mais essentiel, où la biodiversité s’épanouit au
+                rythme des marées.</em
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5"
+        >
+          <div class="w-[60%] h-auto">
+            <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">
+              Parc national de Kundelungu
+            </h1>
+            <p>
+              <span class="font-semibold"
+                >Les chutes les plus spectaculaires du Congo</span
+              ><br />
+              Situé dans la province du Haut-Katanga, le parc national de
+              Kundelungu se distingue par ses vastes paysages de savanes
+              ondulantes, ses plateaux rocheux et ses vallées profondes. Il est
+              surtout réputé pour les impressionnantes chutes de la Lofoi,
+              hautes de près de 340 mètres, considérées comme les plus hautes
+              chutes d’eau de la République Démocratique du Congo.
+              <br /><br />
+              Le parc abrite une faune variée comprenant des antilopes, des
+              buffles, des singes, des reptiles ainsi qu’une riche diversité
+              d’oiseaux, faisant de Kundelungu un lieu privilégié pour
+              l’observation de la nature et la photographie. Encore relativement
+              peu fréquenté, il offre aux visiteurs un cadre paisible et
+              authentique, idéal pour l’exploration et la contemplation.
+              <br /><br />
+              <em
+                >Kundelungu impressionne par ses vastes savanes et ses chutes
+                spectaculaires, véritables joyaux naturels du sud de la RDC. Un
+                espace grandiose, propice à la contemplation et à l’évasion.</em
+              >
+            </p>
+          </div>
+          <div class="w-[40%] h-auto py-10">
+            <div class="img-container">
+              <img
+                src="img/gorille.jpg"
+                alt=""
+                class="w-full h-[50vh] object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="reveal text-[#073a81da] w-full gap-10 h-auto px-7 flex border-b-2 mx-0.5"
+        >
+          <div class="w-[40%] h-auto py-10">
+            <div class="img-container">
+              <img
+                src="img/gorille.jpg"
+                alt=""
+                class="w-full h-[50vh] object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+          <div class="w-[60%] h-auto">
+            <h1 class="text-[#073a81da] text-3xl font-bold mt-5 py-6">
+              Parc national de la Maïko
+            </h1>
+            <p>
+              <span class="font-semibold">L’aventure à l’état pur</span><br />
+              Isolé et profondément sauvage, le parc national de la Maïko
+              s’étend sur près de 10 885 km² de forêts tropicales denses, au
+              cœur de l’une des régions les plus reculées de la RDC. Son
+              éloignement et son accès difficile ont permis de préserver un
+              écosystème exceptionnel, presque intact.
+              <br /><br />
+              Le parc protège des espèces emblématiques et rares telles que
+              l’okapi, le gorille de plaine, le chimpanzé, ainsi qu’une grande
+              diversité d’oiseaux et de mammifères forestiers. Très peu
+              fréquenté, Maïko attire principalement les chercheurs, les
+              naturalistes et les voyageurs en quête d’aventure authentique et
+              de découvertes hors des sentiers battus.
+              <br /><br />
+              <em
+                >Maïko demeure l’un des derniers territoires véritablement
+                sauvages du pays, profond, isolé et intact. Un parc pour les
+                voyageurs en quête d’authenticité et de nature à l’état pur.</em
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="reveal text-[#073a81da] w-full h-auto pt-8 px-7 mb-10">
+          <p class="text-center text-[#073a81da]">
+            <em>
+              Les parcs nationaux de la République Démocratique du Congo offrent
+              bien plus qu’un simple voyage : ils proposent une immersion dans
+              l’une des dernières grandes terres sauvages du monde.
+              <br /><br />
+              Venir au Congo, c’est vivre la nature à l’état brut, rencontrer
+              une faune exceptionnelle et découvrir des paysages que peu ont
+              encore explorés.
+              <br /><br />
+              <strong
+                >Un voyage au cœur de l’une des dernières grandes terres
+                sauvages de la planète, là où l’eau est reine et la vie
+                foisonne.</strong
+              >
+            </em>
+          </p>
+        </div>
+      </div>
+
+      <footer class="bg-gray-900 text-white py-8 text-center mt-10">
+        <p>&copy; 2024 VISIT DRC.</p>
+      </footer>
     </main>
 
     <script>
-        // JavaScript pour déclencher les animations au défilement
-        const observerOptions = {
-            threshold: 0.1
-        };
+      // JavaScript pour déclencher les animations au défilement
+      const observerOptions = {
+        threshold: 0.1,
+      };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal').forEach(element => {
-            observer.observe(element);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
         });
-    </script>
-</body>
+      }, observerOptions);
 
+      document.querySelectorAll(".reveal").forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
 </html>
