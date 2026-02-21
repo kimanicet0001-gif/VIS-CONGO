@@ -14,30 +14,6 @@
     }
 }
 
-.heroo {
-    animation: congo-bg 12s infinite;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 1s ease-in-out;
-}
-
-@keyframes congo-bg {
-
-    0%,
-    33.33% {
-        background-image: url(/img/rwenzori.jpg);
-    }
-
-    33.34%,
-    66.66% {
-        background-image: url(/img/volcan\ nyira.jpg);
-    }
-
-    66.67%,
-    100% {
-        background-image: url(/img/MONTAGNES.jpg);
-    }
-}
 
 .hero-content-slider {
     position: absolute;
