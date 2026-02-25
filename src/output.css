@@ -83,7 +83,6 @@
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --blur-sm: 8px;
     --blur-md: 12px;
@@ -956,6 +955,9 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -1360,10 +1362,6 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
-  }
-  .ease-out {
-    --tw-ease: var(--ease-out);
-    transition-timing-function: var(--ease-out);
   }
   .outline-none {
     --tw-outline-style: none;
@@ -1792,23 +1790,6 @@
     background-color: rgba(255, 187, 0, 0.832);
   }
 }
-.heroo {
-  animation: congo-bg 12s infinite;
-  background-size: cover;
-  background-position: center;
-  transition: background-image 1s ease-in-out;
-}
-@keyframes congo-bg {
-  0%, 33.33% {
-    background-image: url(/img/rwenzori.jpg);
-  }
-  33.34%, 66.66% {
-    background-image: url(/img/volcan\ nyira.jpg);
-  }
-  66.67%, 100% {
-    background-image: url(/img/MONTAGNES.jpg);
-  }
-}
 .hero-content-slider {
   position: absolute;
   left: 0;
@@ -1859,7 +1840,7 @@
   }
 }
 .congo {
-  background-image: url(/img/rwenzori.jpg);
+  background-image: url(img/rwenzori.jpg);
   background-size: cover;
   object-fit: cover;
 }
