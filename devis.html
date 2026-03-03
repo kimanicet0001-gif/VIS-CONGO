@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VISIT DRC | Demande de Devis</title>
+    <meta
+      name="description"
+      content="Demandez un devis personnalisé VISIT DRC: destinations, services, budget, dates et niveau de confort."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+
+      .form-input {
+        transition: all 0.2s ease-in-out;
+        border: 1.5px solid #e2e8f0;
+      }
+
+      .form-input:focus {
+        outline: none;
+        border-color: #06377b;
+        box-shadow: 0 0 0 4px rgba(6, 55, 123, 0.1);
+        background-color: white;
+      }
+
+      .step-number {
+        background: linear-gradient(135deg, #f9bb15 0%, #d49a00 100%);
+      }
+
+      .glass-header {
+        background: rgba(6, 55, 123, 0.95);
+        backdrop-filter: blur(8px);
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#f8fafc] text-slate-800 antialiased">
+    <header
+      class="backdrop-blur-md bg-[#06377be9]/90 sticky top-0 z-50 shadow-lg border-b border-white/10"
+    >
+      <nav
+        class="container mx-auto px-6 h-[12vh] flex justify-between items-center"
+      >
+        <div class="logo flex items-center gap-3">
+          <img
+            src="img/cafe.jpg"
+            class="rounded-full w-14 h-14 object-cover border-2 border-yellow-500 shadow-inner"
+            alt="Logo"
+          />
+          <div class="flex flex-col">
+            <span class="text-2xl font-black text-white leading-none"
+              >VISIT <span class="text-yellow-500">DRC</span></span
+            >
+            <span class="text-[10px] text-yellow-200 tracking-[0.3em] uppercase"
+              >Expérience Unique</span
+            >
+          </div>
+        </div>
+
+        <div class="hidden md:flex space-x-10 items-center">
+          <a
+            href="index.html"
+            class="nav-link-hover text-white/90 hover:text-yellow-500 font-semibold transition"
+            >Accueil</a
+          >
+          <a
+            href="apropos.html"
+            class="nav-link-hover text-white/90 hover:text-yellow-500 font-semibold transition"
+            >À Propos</a
+          >
+          <a
+            href="services.html"
+            class="text-yellow-500 font-bold border-b-2 border-yellow-500"
+            >Services</a
+          >
+          <a
+            href="login.html"
+            class="px-7 py-2.5 bg-yellow-500 text-[#06377b] rounded-full font-extrabold hover:bg-white transition-all transform hover:scale-105 shadow-md"
+          >
+            Connexion
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative bg-[#06377b] py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+          <svg width="100%" height="100%">
+            <pattern
+              id="grid"
+              width="40"
+              height="40"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 40 0 L 0 0 0 40"
+                fill="none"
+                stroke="white"
+                stroke-width="1"
+              />
+            </pattern>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+          <div class="max-w-3xl">
+            <span
+              class="inline-block bg-yellow-400/20 text-yellow-400 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest mb-6"
+              >Voyage sur mesure</span
+            >
+            <h1
+              class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight"
+            >
+              Votre aventure congolaise commence ici
+            </h1>
+            <p
+              class="text-blue-100 text-lg md:text-xl leading-relaxed opacity-90"
+            >
+              Décrivez-nous votre projet de voyage. Nos experts locaux
+              conçoivent pour vous un itinéraire d'exception adapté à vos
+              exigences.
+            </p>
+            <div
+              id="user-banner"
+              class="mt-8 inline-flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-6 py-4 text-sm text-blue-50"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4 -mt-12 relative z-20 pb-16">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="bg-white rounded-[2rem] p-8 shadow-xl border border-slate-100 group hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div
+              class="step-number w-12 h-12 rounded-2xl flex items-center justify-center text-[#06377b] font-black text-xl mb-6 shadow-lg shadow-yellow-400/30"
+            >
+              1
+            </div>
+            <h2 class="text-xl font-extrabold text-[#06377b] mb-3">
+              Expression du besoin
+            </h2>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Précisez vos dates, destinations de rêve et votre niveau de
+              confort souhaité.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-[2rem] p-8 shadow-xl border border-slate-100 group hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div
+              class="step-number w-12 h-12 rounded-2xl flex items-center justify-center text-[#06377b] font-black text-xl mb-6 shadow-lg shadow-yellow-400/30"
+            >
+              2
+            </div>
+            <h2 class="text-xl font-extrabold text-[#06377b] mb-3">
+              Conception locale
+            </h2>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Nos agents optimisent la logistique, la sécurité et les
+              hébergements pour vous.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-[2rem] p-8 shadow-xl border border-slate-100 group hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div
+              class="step-number w-12 h-12 rounded-2xl flex items-center justify-center text-[#06377b] font-black text-xl mb-6 shadow-lg shadow-yellow-400/30"
+            >
+              3
+            </div>
+            <h2 class="text-xl font-extrabold text-[#06377b] mb-3">
+              Offre finalisée
+            </h2>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Recevez votre carnet de voyage prévisionnel et votre devis
+              détaillé sous 48h.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4 pb-20">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12">
+          <div
+            class="lg:col-span-8 bg-white rounded-[2.5rem] shadow-2xl border border-slate-100 overflow-hidden"
+          >
+            <div class="p-8 md:p-12">
+              <div class="flex items-center gap-4 mb-10">
+                <div class="w-1.5 h-10 bg-yellow-400 rounded-full"></div>
+                <div>
+                  <h2 class="text-3xl font-black text-[#06377b]">
+                    Formulaire de devis
+                  </h2>
+                  <p class="text-slate-500 font-medium">
+                    Réponse garantie sous 48 heures
+                  </p>
+                </div>
+              </div>
+
+              <form class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Identité</label
+                  >
+                  <input
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50"
+                    placeholder="Nom complet"
+                    required
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50"
+                    placeholder="exemple@mail.com"
+                    required
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Contact</label
+                  >
+                  <input
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50"
+                    placeholder="Téléphone / WhatsApp"
+                    required
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Localisation</label
+                  >
+                  <input
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50"
+                    placeholder="Pays de résidence"
+                    required
+                  />
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Prestation</label
+                  >
+                  <select
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50 appearance-none"
+                    required
+                  >
+                    <option value="">Sélectionnez un service</option>
+                    <option>Pack complet (All-inclusive)</option>
+                    <option>Guide & Interprète</option>
+                    <option>Transport privé (4x4)</option>
+                    <option>Hôtellerie & Lodges</option>
+                  </select>
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Style de voyage</label
+                  >
+                  <select
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50 appearance-none"
+                    required
+                  >
+                    <option value="">Niveau de confort</option>
+                    <option>Économique (Authentique)</option>
+                    <option>Confort (Standard)</option>
+                    <option>Premium (Luxe)</option>
+                  </select>
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Date d'arrivée prévue</label
+                  >
+                  <input
+                    type="date"
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50"
+                    required
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Logistique</label
+                  >
+                  <input
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50"
+                    placeholder="Nombre de voyageurs"
+                    required
+                  />
+                </div>
+
+                <div class="md:col-span-2 space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Destinations & Itinéraire</label
+                  >
+                  <input
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50"
+                    placeholder="Ex: Virunga, Bukavu, Kinshasa..."
+                    required
+                  />
+                </div>
+
+                <div class="md:col-span-2 space-y-2">
+                  <label
+                    class="text-xs font-bold uppercase tracking-wider text-slate-400 px-1"
+                    >Notes complémentaires</label
+                  >
+                  <textarea
+                    rows="4"
+                    class="form-input w-full rounded-2xl px-5 py-4 bg-slate-50"
+                    placeholder="Activités souhaitées, régime alimentaire, besoins médicaux..."
+                  ></textarea>
+                </div>
+
+                <label
+                  class="md:col-span-2 flex gap-4 items-center bg-slate-50 p-4 rounded-2xl cursor-pointer hover:bg-slate-100 transition-colors"
+                >
+                  <input
+                    type="checkbox"
+                    class="w-5 h-5 rounded-md border-slate-300 text-[#06377b] focus:ring-[#06377b]"
+                    required
+                  />
+                  <span class="text-sm text-slate-600 font-medium"
+                    >J’accepte d’être contacté pour recevoir ma proposition et
+                    les infos de réservation.</span
+                  >
+                </label>
+
+                <button
+                  class="md:col-span-2 bg-[#06377b] text-white py-5 rounded-2xl font-black text-lg shadow-xl shadow-blue-900/20 hover:bg-[#04295f] hover:translate-y-[-2px] active:scale-[0.98] transition-all"
+                >
+                  Envoyer ma demande de devis
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <aside class="lg:col-span-4 space-y-6">
+            <div
+              class="bg-white rounded-3xl border border-slate-100 shadow-xl p-8"
+            >
+              <h3
+                class="text-xl font-extrabold text-[#06377b] flex items-center gap-3"
+              >
+                <span class="w-2 h-6 bg-yellow-400 rounded-full"></span>
+                Ce que vous recevez
+              </h3>
+              <ul class="mt-6 space-y-4">
+                <li class="flex items-start gap-3">
+                  <div
+                    class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center shrink-0 mt-0.5"
+                  >
+                    <span class="text-green-600 text-[10px]">✔</span>
+                  </div>
+                  <span class="text-sm text-slate-600 font-medium italic"
+                    >Un budget estimatif transparent.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <div
+                    class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center shrink-0 mt-0.5"
+                  >
+                    <span class="text-green-600 text-[10px]">✔</span>
+                  </div>
+                  <span class="text-sm text-slate-600 font-medium italic"
+                    >Une proposition de circuit optimisée.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <div
+                    class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center shrink-0 mt-0.5"
+                  >
+                    <span class="text-green-600 text-[10px]">✔</span>
+                  </div>
+                  <span class="text-sm text-slate-600 font-medium italic"
+                    >Le détail complet des services inclus.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-[#06377b] to-[#0a4a99] text-white rounded-3xl p-8 shadow-xl relative overflow-hidden group"
+            >
+              <div class="relative z-10">
+                <h3 class="text-xl font-bold mb-4">Réponse rapide</h3>
+                <p
+                  class="text-blue-100 text-sm leading-relaxed mb-6 opacity-80"
+                >
+                  Nos équipes traitent votre demande sous 24h à 48h selon la
+                  complexité du séjour.
+                </p>
+                <a
+                  href="tarifs.html"
+                  class="inline-flex items-center gap-2 bg-yellow-400 text-[#06377b] px-6 py-3 rounded-full font-extrabold text-sm hover:bg-white transition-all shadow-lg"
+                >
+                  Consulter les tarifs
+                  <span>→</span>
+                </a>
+              </div>
+              <div
+                class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"
+              ></div>
+            </div>
+
+            <div
+              class="bg-white rounded-3xl border border-slate-100 shadow-xl p-8 text-center group"
+            >
+              <div
+                class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform"
+              >
+                <svg
+                  class="w-8 h-8 text-[#06377b]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-extrabold text-[#06377b] mb-2">
+                Besoin d'aide ?
+              </h3>
+              <p class="text-slate-500 text-sm mb-6">
+                Un doute sur les formules ? Parcourez nos services détaillés.
+              </p>
+              <a
+                href="services.html"
+                class="text-[#06377b] font-bold border-b-2 border-[#06377b] pb-1 hover:text-yellow-600 hover:border-yellow-600 transition-all"
+                >Voir les services →</a
+              >
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white/60 py-12 border-t border-white/5">
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <div class="flex items-center gap-2 grayscale opacity-50">
+            <img src="img/cafe.jpg" class="w-8 h-8 rounded-lg" alt="" />
+            <span class="text-white font-bold">VISIT DRC</span>
+          </div>
+          <p class="text-sm font-medium">
+            &copy; 2026 VISIT DRC. L'excellence au cœur de l'Afrique.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const userBanner = document.getElementById("user-banner");
+      try {
+        const currentUser = JSON.parse(
+          localStorage.getItem("visit_drc_current_user") || "null",
+        );
+        if (currentUser && (currentUser.name || currentUser.email)) {
+          userBanner.innerHTML = `<span class="flex h-3 w-3 rounded-full bg-green-400"></span><p>✅ Connecté en tant que <strong class="text-white">${currentUser.name || currentUser.email}</strong>. Votre demande est prioritaire.</p>`;
+        } else {
+          userBanner.innerHTML = `<span class="flex h-3 w-3 rounded-full bg-yellow-400 animate-pulse"></span><p>💡 <a href="login.html" class="text-yellow-400 hover:underline font-extrabold">Se connecter</a> pour bénéficier d'un suivi personnalisé.</p>`;
+        }
+      } catch (error) {
+        userBanner.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

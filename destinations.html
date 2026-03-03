@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VISIT DRC | Destinations Populaires</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .destination-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .destination-card:hover { transform: translateY(-8px); shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-[#06377b]/95 backdrop-blur-md">
+      <nav class="container mx-auto flex h-20 items-center justify-between px-6">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="img/cafe.jpg" alt="Logo" class="h-12 w-12 rounded-xl border border-yellow-500 object-cover" />
+          <span class="text-xl font-black tracking-tighter text-white">VISIT <span class="text-yellow-500">DRC</span></span>
+        </a>
+        <div class="hidden items-center gap-8 md:flex text-sm font-bold">
+          <a href="index.html" class="text-white/80 hover:text-yellow-400 transition">Accueil</a>
+          <a href="destinations.html" class="text-yellow-400">Destinations</a>
+          <a href="parc.html" class="text-white/80 hover:text-yellow-400 transition">Parcs</a>
+          <a href="login.html" class="rounded-full bg-white px-5 py-2.5 text-[#06377b] hover:bg-yellow-500 hover:text-white transition">Espace Membre</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-[#06377b] px-6 py-16 text-white relative overflow-hidden">
+        <div class="container mx-auto max-w-5xl text-center relative z-10">
+          <h1 class="text-4xl font-extrabold md:text-6xl tracking-tight">Où commence votre <span class="text-yellow-500">aventure</span> ?</h1>
+          <p class="mx-auto mt-6 max-w-2xl text-lg text-blue-100/80">
+            Du sommet des volcans aux rythmes de Kinshasa, trouvez l'itinéraire qui correspond à votre esprit.
+          </p>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-slate-50 to-transparent"></div>
+      </section>
+
+      <section class="container mx-auto px-6 -mt-10 relative z-20">
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl">
+          <div class="grid gap-6 md:grid-cols-3">
+            <div class="space-y-2">
+              <label class="text-xs font-black uppercase tracking-widest text-slate-400">Expérience</label>
+              <select id="activityFilter" class="w-full rounded-xl bg-slate-50 border-none px-4 py-3 font-semibold focus:ring-2 focus:ring-yellow-500 outline-none">
+                <option value="all">Tous les styles</option>
+                <option value="safari">Safari Animalier</option>
+                <option value="trekking">Trekking & Alpinisme</option>
+                <option value="culture">Immersion Culturelle</option>
+              </select>
+            </div>
+
+            <div class="space-y-2">
+              <label class="text-xs font-black uppercase tracking-widest text-slate-400">Budget Estimé</label>
+              <select id="budgetFilter" class="w-full rounded-xl bg-slate-50 border-none px-4 py-3 font-semibold focus:ring-2 focus:ring-yellow-500 outline-none">
+                <option value="all">Tous les budgets</option>
+                <option value="eco">Économique ($)</option>
+                <option value="standard">Standard ($$)</option>
+                <option value="premium">Premium ($$$)</option>
+              </select>
+            </div>
+
+            <div class="space-y-2">
+              <label class="text-xs font-black uppercase tracking-widest text-slate-400">Durée du séjour</label>
+              <select id="durationFilter" class="w-full rounded-xl bg-slate-50 border-none px-4 py-3 font-semibold focus:ring-2 focus:ring-yellow-500 outline-none">
+                <option value="all">Toutes durées</option>
+                <option value="court">Week-end (1-3j)</option>
+                <option value="moyen">Semaine (4-7j)</option>
+                <option value="long">Expédition (8j+)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="destinationGrid" class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          
+          <article class="destination-card group overflow-hidden rounded-[2.5rem] bg-white shadow-lg border border-slate-100" data-activity="trekking" data-budget="premium" data-duration="moyen">
+            <div class="relative overflow-hidden">
+                <img src="img/rwenzori.jpg" alt="Rwenzori" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <span class="absolute top-4 right-4 rounded-full bg-white/90 px-4 py-1 text-[10px] font-black uppercase backdrop-blur-md">Trekking</span>
+            </div>
+            <div class="p-8">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-extrabold text-[#06377b]">Monts Rwenzori</h3>
+                <span class="text-yellow-600 font-bold">$$$</span>
+              </div>
+              <p class="text-sm leading-relaxed text-slate-500">Atteignez les sommets enneigés et traversez des paysages lunaires uniques en Afrique.</p>
+              <div class="mt-6 flex items-center justify-between border-t pt-4">
+                <span class="text-xs font-bold text-slate-400 italic">Conseillé : 5 jours</span>
+                <button class="text-[#06377b] font-black text-sm hover:text-yellow-500 transition">Explorer →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card group overflow-hidden rounded-[2.5rem] bg-white shadow-lg border border-slate-100" data-activity="safari" data-budget="standard" data-duration="court">
+            <div class="relative overflow-hidden">
+                <img src="img/okapi.jpg" alt="Okapi" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <span class="absolute top-4 right-4 rounded-full bg-white/90 px-4 py-1 text-[10px] font-black uppercase backdrop-blur-md">Safari</span>
+            </div>
+            <div class="p-8">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-extrabold text-[#06377b]">Réserve d'Okapis</h3>
+                <span class="text-yellow-600 font-bold">$$</span>
+              </div>
+              <p class="text-sm leading-relaxed text-slate-500">Partez sur les traces de "la licorne d'Afrique" au cœur de l'Ituri profonde.</p>
+              <div class="mt-6 flex items-center justify-between border-t pt-4">
+                <span class="text-xs font-bold text-slate-400 italic">Conseillé : 3 jours</span>
+                <button class="text-[#06377b] font-black text-sm hover:text-yellow-500 transition">Explorer →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card group overflow-hidden rounded-[2.5rem] bg-white shadow-lg border border-slate-100" data-activity="culture" data-budget="eco" data-duration="court">
+            <div class="relative overflow-hidden">
+                <img src="img/KINSHASA.jpg" alt="Kinshasa" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <span class="absolute top-4 right-4 rounded-full bg-white/90 px-4 py-1 text-[10px] font-black uppercase backdrop-blur-md">Culture</span>
+            </div>
+            <div class="p-8">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-extrabold text-[#06377b]">Kinshasa Vibes</h3>
+                <span class="text-yellow-600 font-bold">$</span>
+              </div>
+              <p class="text-sm leading-relaxed text-slate-500">L'énergie pure de l'Afrique : rumba, gastronomie et marchés bouillonnants.</p>
+              <div class="mt-6 flex items-center justify-between border-t pt-4">
+                <span class="text-xs font-bold text-slate-400 italic">Conseillé : 2 jours</span>
+                <button class="text-[#06377b] font-black text-sm hover:text-yellow-500 transition">Explorer →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card group overflow-hidden rounded-[2.5rem] bg-white shadow-lg border border-slate-100" data-activity="safari" data-budget="premium" data-duration="long">
+            <div class="relative overflow-hidden">
+                <img src="img/gorille.jpg" alt="Virunga" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <span class="absolute top-4 right-4 rounded-full bg-[#06377b] text-white px-4 py-1 text-[10px] font-black uppercase">Mythique</span>
+            </div>
+            <div class="p-8">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-extrabold text-[#06377b]">Parc des Virunga</h3>
+                <span class="text-yellow-600 font-bold">$$$</span>
+              </div>
+              <p class="text-sm leading-relaxed text-slate-500">Rencontre inoubliable avec les gorilles et ascension du volcan Nyiragongo.</p>
+              <div class="mt-6 flex items-center justify-between border-t pt-4">
+                <span class="text-xs font-bold text-slate-400 italic">Conseillé : 8 jours</span>
+                <button class="text-[#06377b] font-black text-sm hover:text-yellow-500 transition">Explorer →</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div id="emptyState" class="mt-12 hidden text-center py-20 bg-slate-100 rounded-[3rem] border-2 border-dashed border-slate-200">
+          <p class="text-slate-400 font-bold italic">Aucun itinéraire ne correspond à votre sélection. Essayez d'élargir vos filtres.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-20 border-t bg-white py-12 text-center">
+      <p class="text-xs font-black uppercase tracking-[0.3em] text-[#06377b]">© 2026 VISIT DRC — L'excellence au cœur de l'Afrique</p>
+    </footer>
+
+    <script>
+      const filters = {
+        activity: document.getElementById("activityFilter"),
+        budget: document.getElementById("budgetFilter"),
+        duration: document.getElementById("durationFilter"),
+      };
+
+      const cards = [...document.querySelectorAll(".destination-card")];
+      const emptyState = document.getElementById("emptyState");
+
+      function applyFilters() {
+        const selected = {
+          activity: filters.activity.value,
+          budget: filters.budget.value,
+          duration: filters.duration.value,
+        };
+
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const matchesActivity = selected.activity === "all" || card.dataset.activity === selected.activity;
+          const matchesBudget = selected.budget === "all" || card.dataset.budget === selected.budget;
+          const matchesDuration = selected.duration === "all" || card.dataset.duration === selected.duration;
+
+          const visible = matchesActivity && matchesBudget && matchesDuration;
+          card.style.display = visible ? "block" : "none";
+          if (visible) visibleCount += 1;
+        });
+
+        emptyState.classList.toggle("hidden", visibleCount > 0);
+      }
+
+      Object.values(filters).forEach((element) => element.addEventListener("change", applyFilters));
+    </script>
+</body>
+</html>
